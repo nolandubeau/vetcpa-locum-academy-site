@@ -40,7 +40,7 @@ const painPoints = [
 ]
 export const PainPoints = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-green-800">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base/7 font-semibold text-red-600">Stop Stressing About Taxes</h2>

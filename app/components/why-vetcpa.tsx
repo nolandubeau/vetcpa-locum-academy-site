@@ -10,7 +10,7 @@ export const WhyVetCPA = () => {
     <div className="relative bg-white">
       <img
         alt=""
-        src="../public/assets/getty-images-HGmvOpDf-jA-unsplash.jpg"
+        src="/assets/vetcpa-locum.jpg"
         className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
       />
       <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
@@ -27,6 +27,11 @@ export const WhyVetCPA = () => {
               comprehensive resources, we aim to empower veterinarians to attain their financial goals and secure a
               prosperous future.
             </p>
+            <p className="mt-6 text-lg/8 text-gray-600">
+              <a href="https://www.vetcpa.ca" target="_blank" className="text-sm/6 font-semibold text-gray-900">
+                Learn about VetCPA <span aria-hidden="true">→</span>
+              </a>
+            </p>
 
           </div>
         </div>
@@ -34,4 +39,3 @@ export const WhyVetCPA = () => {
     </div>
   )
 }
-

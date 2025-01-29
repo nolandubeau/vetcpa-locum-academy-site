@@ -118,7 +118,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-24 border-t border-white/10 pt-12 xl:grid xl:grid-cols-3 xl:gap-8">
-          <img alt="VetCPA" src="https://tailwindui.com/plus/img/logos/mark.svg?color=red&shade=500" className="h-9" />
+          <img alt="VetCPA" src="/assets/logo.svg" className="h-9" />
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
@@ -189,4 +189,3 @@ export const Footer = () => {
     </footer>
   )
 }
-
