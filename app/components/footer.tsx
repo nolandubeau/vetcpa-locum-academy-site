@@ -1,4 +1,7 @@
+"use client"
+
 import type React from "react"
+import TypeFormButton from "./typeform"
 
 const navigation = {
   solutions: [
@@ -17,10 +20,10 @@ const navigation = {
     { name: "Incorporation Decision Flowchart", href: "#" },
   ],
   company: [
-    { name: "About VetCPA", href: "#" },
-    { name: "Bookkeeping & Accounting", href: "#" },
-    { name: "Practice Management & Support", href: "#" },
-    { name: "Tax Planning", href: "#" },
+    { name: "About VetCPA", href: "https://vetcpa.ca", target: "_new" },
+    { name: "Bookkeeping & Accounting", href: "https://vetcpa.ca/bookkeeping-accounting", target: "_new" },
+    { name: "Practice Management & Support", href: "https://vetcpa.ca/practice-management", target: "_new" },
+    { name: "Tax Planning", href: "https://vetcpa.ca/tax-planning", target: "_new" },
   ],
   legal: [
     { name: "Terms of Service", href: "#" },
@@ -98,7 +101,7 @@ const navigation = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-green-800">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base/7 font-semibold text-red-400">Get started</h2>
@@ -109,21 +112,22 @@ export const Footer = () => {
             Enroll in our free course today and get instant access to all modules, downloads, and resources.
           </p>
           <div className="mt-8 flex justify-center">
-            <a
+            <TypeFormButton />
+            {/* <a
               href="#"
               className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400"
             >
               Enroll now for FREE
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="mt-24 border-t border-white/10 pt-12 xl:grid xl:grid-cols-3 xl:gap-8">
-          <img alt="VetCPA" src="/assets/logo.svg" className="h-9" />
+          <img alt="VetCPA" src="/assets/logo-coral.svg" className="h-10" />
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm/6 font-semibold text-white">Modules</h3>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-6 space-y-0">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm/6 text-gray-400 hover:text-white">
@@ -135,7 +139,7 @@ export const Footer = () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm/6 font-semibold text-white">Resources</h3>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-6 space-y-0">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm/6 text-gray-400 hover:text-white">
@@ -149,7 +153,7 @@ export const Footer = () => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm/6 font-semibold text-white">Company</h3>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-6 space-y-0">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm/6 text-gray-400 hover:text-white">
@@ -161,7 +165,7 @@ export const Footer = () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm/6 font-semibold text-white">Legal</h3>
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-6 space-y-0">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-sm/6 text-gray-400 hover:text-white">
@@ -175,14 +179,14 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-12 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex gap-x-6 md:order-2">
+          {/* <div className="flex gap-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
                 <span className="sr-only">{item.name}</span>
                 <item.icon aria-hidden="true" className="size-6" />
               </a>
             ))}
-          </div>
+          </div> */}
           <p className="mt-8 text-sm/6 text-gray-400 md:order-1 md:mt-0">&copy; 2024 VetCPA. All rights reserved.</p>
         </div>
       </div>

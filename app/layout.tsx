@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Footer } from './components/footer'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'VetCPA Locum Academy',
+  description: 'Master Your Canadian Veterinary Locum Finances & Taxes',
 }
 
 export default function RootLayout({

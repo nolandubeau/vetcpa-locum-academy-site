@@ -14,6 +14,18 @@ const config = {
     },
     extend: {
       colors: {
+        coral: {
+          50: '#FEF6F1',
+          100: '#FDECE3',
+          200: '#FBDAC7',
+          300: '#F8C7AB',
+          400: '#F6B58F',
+          500: '#EDA391',
+          600: '#D17E6F',
+          700: '#B55A4D',
+          800: '#98362B',
+          900: '#7B1209'
+        },
         green: {
           50: '#E6F5F2',
           100: '#CCEAE5',

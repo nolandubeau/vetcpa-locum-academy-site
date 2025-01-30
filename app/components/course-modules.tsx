@@ -106,7 +106,7 @@ const posts = [
 
 export const CourseModules = () => {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-24 sm:py-32" id="what-you-will-learn">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
@@ -155,6 +155,7 @@ export const CourseModules = () => {
                     {post.description}
                   </p>
                 </div>
+                
               </div>
             </article>
           ))}

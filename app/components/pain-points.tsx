@@ -1,4 +1,5 @@
 import { CheckCircleIcon } from "@heroicons/react/24/outline"
+import TypeFormButton from "./typeform"
 
 const painPoints = [
   {
@@ -43,7 +44,7 @@ export const PainPoints = () => {
     <div className="bg-green-800">
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base/7 font-semibold text-red-600">Stop Stressing About Taxes</h2>
+          <h2 className="text-base/7 font-semibold text-coral-600">Stop Stressing About Taxes</h2>
           <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
             Are you struggling with...
           </p>
@@ -54,19 +55,20 @@ export const PainPoints = () => {
             {painPoints.map((point) => (
               <div key={point.id} className="relative flex gap-x-3">
                 <dt className="flex items-center">
-                  <point.icon className="h-5 w-5 text-red-600" aria-hidden="true" />
+                  <point.icon className="h-5 w-5 text-coral-600" aria-hidden="true" />
                 </dt>
                 <dd className="text-lg">{point.title}</dd>
               </div>
             ))}
           </dl>
           <div className="mt-8 flex justify-center">
-            <a
+            {/* <a
               href="#"
               className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
             >
               Enroll now for FREE
-            </a>
+            </a> */}
+            <TypeFormButton />
           </div>
         </div>
       </div>

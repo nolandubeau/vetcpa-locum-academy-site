@@ -1,11 +1,13 @@
 import { Dialog, DialogPanel } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState } from "react"
+import TypeFormButton from "./typeform"
+
 
 const navigation = [
-  { name: "Course Outline", href: "#course-outline" },
-  { name: "Free Resources", href: "#free-resources" },
-  { name: "About VetCPA", href: "https://www.vetcpa.ca/about-us" },
+  { name: "What You'll Learn", href: "#what-you-will-learn", target: "_self" },
+  { name: "Free Resources", href: "#free-resources", target: "_self" },
+  { name: "About VetCPA", href: "#about-vetcpa", target: "_self" },
 ]
 
 export const Hero = () => {
@@ -18,11 +20,11 @@ export const Hero = () => {
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
             <nav aria-label="Global" className="flex items-center justify-between lg:justify-start">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">VetCPA Locum Academy</span>
                 <img
                   alt="VetCPA"
                   src="/assets/logo.svg"
-                  className="h-8 w-auto"
+                  className="h-9 w-auto"
                 />
               </a>
               <button
@@ -35,7 +37,7 @@ export const Hero = () => {
               </button>
               <div className="hidden lg:ml-12 lg:flex lg:gap-x-14">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+                  <a key={item.name} href={item.href} target={item.target} className="text-sm/6 font-semibold text-gray-900">
                     {item.name}
                   </a>
                 ))}
@@ -52,7 +54,7 @@ export const Hero = () => {
                 <img
                   alt=""
                   src="/assets/logo.svg"
-                  className="h-8 w-auto"
+                  className="h-9 w-auto"
                 />
               </a>
               <button
@@ -102,18 +104,18 @@ export const Hero = () => {
                   Veterinarian Locum Academy
                 </h1>
                 <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                  Master your veterinary locum finances with this Free Course. Get expert guidance on Canadian taxes,
-                  GST/HST, and practice management for successful locum veterinarians
+                FREE Course: Transform Your Veterinary Locum Practice. Master Canadian taxes, GST/HST, and business finances with expert guidance from specialized veterinary accountants.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
+                  {/* <a
                     href="#"
-                    className="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+                    className="rounded-md bg-coral-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-coral-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
                   >
                     Enroll Now for FREE
-                  </a>
-                  <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                    Learn more <span aria-hidden="true">→</span>
+                  </a> */}
+                  <TypeFormButton />
+                  <a href="#what-you-will-learn" className="text-sm/6 font-semibold text-gray-900">
+                    Course Outline <span aria-hidden="true">→</span>
                   </a>
                 </div>
               </div>

@@ -1,3 +1,5 @@
+import TypeFormButton from "./typeform"
+
 const faqs = [
   {
     question: 'How long do I have access to the course?',
@@ -30,7 +32,7 @@ export const FAQs = () => {
             <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
               Frequently asked questions
             </h2>
-            <p className="mt-4 text-pretty text-base/7 text-gray-600">
+            {/* <p className="mt-4 text-pretty text-base/7 text-gray-600">
               Can’t find the answer you’re looking for? Reach out to our{' '}
               <a
                 href="#"
@@ -39,7 +41,9 @@ export const FAQs = () => {
                 customer support
               </a>{' '}
               team.
-            </p>
+            </p> */}
+
+            <div className="space-y-8"><TypeFormButton /></div>
           </div>
           <div className="mt-10 lg:col-span-7 lg:mt-0">
             <dl className="space-y-10">
